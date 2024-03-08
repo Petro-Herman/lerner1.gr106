@@ -3,13 +3,31 @@ body {
 }
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
+
+/* img {
+    box-sizing: border-box;
+} */
+
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 button {
     cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .visually-hidden {
@@ -25,6 +43,13 @@ button {
     overflow: hidden;
 }
 
+.container {
+    width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .title {
     font-weight: 600;
     font-size: 24px;
@@ -37,6 +62,11 @@ button {
 
 .title span {
     color: #fd9222;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;
 }
 
 .header-logo {
@@ -65,16 +95,24 @@ button {
 }
 
 .hero {
-    background: rgba(17, 17, 17, 0.6);
+    padding-bottom: 80px;
 }
 
-/* .hero-title {
+.hero-wrap {
+    background: rgba(17, 17, 17, 0.6);
+    padding: 380px 40px 40px 40px;
+    border-radius: 30px;
+}
+
+.hero-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
     color: #fff;
-} */
+    margin-bottom: 32px;
+    max-width: 484px;
+}
 
 .hero-buy-btn {
     background: #fd9222;
@@ -99,6 +137,8 @@ button {
 
 .features {
     background: #1e1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* .features-list {}
@@ -119,23 +159,32 @@ button {
 }
 
 /* ============================== */
-/* .taste {} */
+.taste {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-/* .taste-title {
-    font-weight: 600;
+.taste-title {
+    max-width: 412px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    /* font-weight: 600;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: #111;
-} */
+    color: #111; */
+}
 
 /* .taste-title span {
     color: #fd9222;
 } */
 
 .taste-text {
+    max-width: 486px;
+    margin: 0 auto;
+    margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
