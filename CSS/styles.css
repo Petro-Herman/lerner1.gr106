@@ -8,9 +8,9 @@ ul {
     padding-left: 0;
 }
 
-/* img {
-    box-sizing: border-box;
-} */
+img {
+    display: block;
+}
 
 a {
     text-decoration: none;
@@ -69,16 +69,40 @@ h1, h2, h3, h4, h5, h6, p {
     padding-bottom: 32px;
 }
 
+.header-container {
+    display: flex;
+}
+
 .header-logo {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.03em;
     color: #111;
+    display: flex;
+    align-items: center;
 }
 
 .header-logo-cursive {
     font-style: italic;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 24px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-right: 90px;
+}
+
+.header-contact-list {
+    display: flex;
+    gap: 14px;
 }
 
 .header-menu-link {
@@ -119,12 +143,20 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     font-size: 14px;
     color: #fff;
+    border-radius: 100px;
+    border: 0;
+    padding: 14px 40px;
+    margin-right: 14px;
 }
 
 .hero-made-btn {
     font-weight: 600;
     font-size: 14px;
     color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    background: transparent;
 }
 
 .hero-down-btn {
@@ -133,6 +165,13 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: #fff;
+    margin-left: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
 }
 
 .features {
@@ -141,14 +180,22 @@ h1, h2, h3, h4, h5, h6, p {
     padding-bottom: 50px;
 }
 
-/* .features-list {}
+.features-list {
+    display: flex;
+    gap: 88px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
 
-.features-item {} */
+.features-item {
+    width: calc((100% - 2 * 88px) / 3);
+}
 
 .features-subtitle {
     font-weight: 600;
     font-size: 18px;
     color: #fff;
+    margin-bottom: 18px;
 }
 
 .features-item-text {
@@ -192,11 +239,22 @@ h1, h2, h3, h4, h5, h6, p {
     color: #111;
 }
 
-/* .taste-list {}
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+}
 
-.taste-item {}
+.taste-item {
+    background-color: #fd9222;
+    border-radius: 15px;
+    width: calc((100% - 3 * 32px) /4);
+    padding: 28px 23px;
+}
 
-.taste-image {} */
+.taste-image {
+    margin-bottom: 36px;
+}
 
 .taste-subtitle {
     font-weight: 600;
@@ -205,6 +263,7 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111;
+    padding-left: 5px;
 }
 
 /* ====================================== */
